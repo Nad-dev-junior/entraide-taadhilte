@@ -107,12 +107,29 @@ p::first-letter {
   text-align: right;
   padding-right: 17%;
 }
-#imgImprovise {
+.imgimp{
+ width: 100%;
+ background-image: url("./media/svg/eid2025orphelin.jpg");
+ background-size: cover;
+ background-repeat: no-repeat;
+ height: 30vh;
+ object-fit: cover;
+}
+#imgImprovise, #imgVision, #imgDons  {
   width: 100%;
   padding: 2rem;
   opacity: 0;
   transform: translateX(-200px);
   transition: 1s ease-in;
+}
+
+.img-vision{
+  width: 100%;
+background-image: url("./media/idees-d-innovation-concept-de-design-creatif.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 30vh;
+  object-fit: cover;
 }
 .overcome {
   padding: 2rem;
@@ -258,9 +275,7 @@ p::first-letter {
     color: #34bdff;
   
   }
-  /* .active ~ .bloc-logo{
-      display: none;
-  } */
+
   .nav-links {
       flex-direction: column;
       width: 100%;
