@@ -11,10 +11,12 @@ html {
 }
 h2 {
   margin: 0 0 20px 20px;
-  font-size: 2rem;
+  font-size: 2rem;  
+ 
 }
 #adapt-title{
   font-size: 1.5em;
+
 }
 body {
   background: #eee;
@@ -36,6 +38,7 @@ nav {
   height: 100%;
   margin: auto; 
 }
+
 .nav-elements a {
   color: #333;
   text-decoration: none;
@@ -105,7 +108,7 @@ p::first-letter {
   padding-right: 17%;
 }
 #imgImprovise {
-  width: 60%;
+  width: 100%;
   padding: 2rem;
   opacity: 0;
   transform: translateX(-200px);
@@ -251,10 +254,13 @@ p::first-letter {
      right: -607px;
      width: 50%;
   }
-
-  .active ~ .bloc-logo{
-      display: none;
+  .nav-elements h3 a{ 
+    color: #34bdff;
+  
   }
+  /* .active ~ .bloc-logo{
+      display: none;
+  } */
   .nav-links {
       flex-direction: column;
       width: 100%;
@@ -266,7 +272,6 @@ p::first-letter {
      position: absolute;
      width: 230px;
      height: 100%;
-     background: #023f57;
      top: 0;
      left: -230px;
      transition: 0.5s ease-out;
