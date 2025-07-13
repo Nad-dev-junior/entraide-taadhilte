@@ -85,9 +85,16 @@ p::first-letter {
 .dummy-adapt {
   padding: 2rem 2rem 2rem 0;
 }
-.adapt img {
+/* .adapt img {
   width: 50%;
+} */
+.square-img {
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  width: 100%;
+  max-width: 400px; /* ou ce que tu veux */
 }
+
 .improvise {
   padding: 1rem;
   margin-bottom: 3rem;
@@ -231,7 +238,7 @@ p::first-letter {
 @media screen and (max-width: 700px) {
   body{
     overflow-x: hidden;
-    text-align: center;
+    text-align: center important!;
   }
   /* ********Menu beurgeur******** */
   .content {
@@ -331,6 +338,6 @@ p::first-letter {
   .adapt , .improvise{
     flex-direction: column;;
     align-items: center;
-    margin: 0 auto;
+   text-align: center;
   }
 }
