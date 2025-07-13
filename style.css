@@ -225,3 +225,112 @@ p::first-letter {
   max-height: 70vh;
    object-fit:cover;
 }
+
+/* media queries */
+
+@media screen and (max-width: 700px) {
+  body{
+    overflow-x: hidden;
+    text-align: center;
+  }
+  /* ********Menu beurgeur******** */
+  .content {
+      transition: 1s;
+  }
+  
+  .bloc-logo{
+     position: absolute;
+     top: 15px;
+     right: -607px;
+     width: 50%;
+  }
+
+  .active ~ .bloc-logo{
+      display: none;
+  }
+  .nav-links {
+      flex-direction: column;
+      width: 100%;
+      justify-content:space-around;
+      align-items: flex-start;
+      padding: 0 ;
+  }
+  #navbar{
+     position: absolute;
+     width: 230px;
+     height: 100%;
+     background: #023f57;
+     top: 0;
+     left: -230px;
+     transition: 0.5s ease-out;
+     z-index: 4;
+     display: flex;
+     align-items: flex-start;
+     padding: 0;
+  }
+
+  .btn-toggle{
+      position: absolute;
+      top: 30px; 
+       left: 240px;
+      cursor: pointer;
+      width: 50px;
+      height: 50px;
+  }
+  .btn-toggle span {
+      width: 60px;
+      height: 10px;
+      border-radius: 5px;
+      background: #29b0c2;
+      display: block;
+      margin-top: 4px;
+      transition: 0.3s ease-out;
+
+  }
+  .navbar ul li:first-child::before{
+      background: none;
+  }
+  .navbar ul li:hover::before{
+      opacity: 0;
+      
+  }
+  .nav-links li{
+      font-size: 1.2em;  
+       padding: 15px 0 15px 10px; 
+       width: 100%;
+  }
+  .nav-links li:hover{
+      background: rgb(15, 13, 13);
+      color: white;
+      width: 100%;
+  }
+
+  .active{
+      left: 0 !important;
+  }
+
+  .active ~ .content {
+      opacity: 0.3;
+  }
+
+  .active span{
+      position: absolute;
+  }
+
+  .active span:nth-child(1){
+      transform: rotate(45deg);
+  }
+  .active span:nth-child(2){
+      opacity: 0;
+  }
+  .active span:nth-child(3){
+      transform: rotate(-45deg);
+  }
+
+  /* section qui sommes nous */
+  .adapt , .improvise{
+    flex-direction: column;;
+    align-items: center;
+    margin: 0 auto;
+  }
+}
