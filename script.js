@@ -29,3 +29,11 @@ closeBtn.addEventListener("click", () => {
   popup.style.opacity = 0;
   popup.style.transform = "translateX(500px)";
 });
+
+// menu beurger
+const sidebar = document.getElementById("navbar");
+const content = document.querySelector(".content");
+
+btnt.addEventListener("click", ()=>{
+    sidebar.classList.toggle("active");
+})
