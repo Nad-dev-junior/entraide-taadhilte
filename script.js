@@ -2,28 +2,25 @@ let playOnce = true;
 
 window.addEventListener("scroll", () => {
   // Navbar effect
-  if (window.scrollY > 50) {
-    navbar.style.height = "45px";
-  } else {
-    navbar.style.height = "90px";
-  }
+  // if (window.scrollY > 50) {
+  //   navbar.style.height = "45px";
+  // } else {
+  //   navbar.style.height = "90px";
+  // }
 
   let scrollValue =
     (window.scrollY + window.innerHeight) / document.body.offsetHeight;
   console.log(scrollValue);
   // Image
-  if (scrollValue > 0.30) {
+  if (scrollValue > 0.40) {
     imgImprovise.style.opacity = 1;
     imgImprovise.style.transform = "none";
   };
-  if (scrollValue > 0.50) {
+  if (scrollValue > 0.60) {
     imgVision.style.opacity = 1;
     imgVision.style.transform = "none";
   };
-  if (scrollValue > 0.58) {
-    imgDons.style.opacity = 1;
-    imgDons.style.transform = "none";
-  };
+ 
   // Popup
   if (scrollValue > 0.85 && playOnce) {
     popup.style.opacity = 1;
@@ -38,9 +35,9 @@ closeBtn.addEventListener("click", () => {
 });
 
 // menu beurger
-const sidebar = document.getElementById("navbar");
-const content = document.querySelector(".content");
+// const sidebar = document.getElementById("navbar");
+// const content = document.querySelector(".content");
 
-btnt.addEventListener("click", ()=>{
-    sidebar.classList.toggle("active");
-})
+// btnt.addEventListener("click", ()=>{
+//     sidebar.classList.toggle("active");
+// })
