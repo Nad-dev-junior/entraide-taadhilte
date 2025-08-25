@@ -41,3 +41,20 @@ closeBtn.addEventListener("click", () => {
 // btnt.addEventListener("click", ()=>{
 //     sidebar.classList.toggle("active");
 // })
+
+// la navbar se ferme quand on clique sur un lien
+
+document.addEventListener("DOMContentLoaded", function () {
+  const navLinks = document.querySelectorAll('.nav-link');
+  const navbarCollapse = document.getElementById('navbarNav');
+
+  navLinks.forEach(function (link) {
+    link.addEventListener('click', function () {
+      if (navbarCollapse.classList.contains('show')) {
+        new bootstrap.Collapse(navbarCollapse).toggle();
+      }
+    });
+  });
+});
+
+
